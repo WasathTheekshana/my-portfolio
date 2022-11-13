@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;500;600;700&display=swap');
+
+:root {
+    --primary-color: #ffff;
+    --sec-color: #AFAFAF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat";
+    overflow: hidden;
+}
+
+body {
+    background-image: url("../../images/landing.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.landing {
+    margin: 20px;
+    padding: 20px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 20px;
+}
+
+.nav-items {
+    ul {
+        display: flex;
+        flex-direction: row;
+        margin-right: 100px;
+
+        li {
+            margin-right: 50px;
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.logo {
+    a {
+        text-decoration: none;
+        color: var(--primary-color);
+        font-weight: bold;
+        margin-left: 150px;
+        font-size: 1.4rem;
+    }
+}
+
+.landing-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.main-center {
+    display: flex;
+    flex-direction: row;
+    // border: 1px solid white;
+    width: 70vw;
+    height: 70vh;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 70vh;
+}
+
+.left-top {
+    display: flex;
+    flex-direction: column;
+    //   border: 1px solid red;
+    width: 35vw;
+    height: 35vh;
+    justify-content: center;
+    align-items: flex-end;
+
+    .left-text {
+        color: var(--sec-color);
+        font-size: 4rem;
+        text-align: right;
+        font-weight: 200;
+
+        span{
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+    }
+}
+
+.left-bottom {
+    //   border: 1px solid white;
+    display: flex;
+    width: 35vw;
+    height: 35vh;
+    justify-content: center;
+    
+    
+    .left-box {
+        border: .3px solid white;
+        opacity: 30%;
+        width: 30vw;
+        height: 30vh;
+        margin: 20px;
+        margin-right: 10px;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+    
+
+    }
+
+}
+
+
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 35vw;
+    height: 70vh;
+}
+
+.right-top {
+    display: flex;
+    width: 35vw;
+    height: 35vh;
+    justify-content:center;
+    
+    
+    .right-box {
+        border: .3px solid white;
+        opacity: 30%;
+        width: 30vw;
+        height: 30vh;
+        margin: 20px;
+        margin-left: 10px;
+        display: flex;
+        color: white;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    
+
+    }
+}
+
+.right-bottom {
+    // border: 1px solid green;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid red;
+    width: 35vw;
+    height: 35vh;
+    justify-content: center;
+    align-items: flex-start;
+
+  
+
+    .right-text {
+        color: var(--sec-color);
+        font-size: 4rem;
+        text-align: left;
+        font-weight: 200;
+
+        span{
+            color: var(--primary-color);
+            font-weight: 500;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.gradient {
+    background: linear-gradient(180deg,
+            #000000 6.55%,
+            rgba(0, 0, 0, 0) 28.71%,
+            rgba(0, 0, 0, 0) 32.58%,
+            rgba(65, 65, 65, 0) 60.15%,
+            rgba(217, 217, 217, 0) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+
+    background-size: cover;
+
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    // margin: -40px !important;
+    // padding: -20px !important;
+    z-index: -1000;
+    // opacity: 80%;
+}
+
+.noise::before {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    content: "";
+    opacity: 5%;
+    z-index: 1000;
+
+    pointer-events: none;
+    background: url("../../images/noise.gif");
+}
